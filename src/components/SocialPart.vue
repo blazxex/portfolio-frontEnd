@@ -1,7 +1,7 @@
 <template>
   <div class="bg-black p-4 rounded-lg flex justify-center space-x-4">
     <a
-      href="https://www.linkedin.com"
+      href="https://www.linkedin.com/in/ratchanon-thanatsang-157228127/"
       target="_blank"
       class="flex flex-col items-center flex-1"
     >
@@ -17,7 +17,7 @@
       </div>
     </a>
     <a
-      href="https://github.com"
+      href="https://github.com/blazxex"
       target="_blank"
       class="flex flex-col items-center flex-1"
     >

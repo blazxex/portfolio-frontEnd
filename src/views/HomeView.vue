@@ -11,10 +11,10 @@
             <HornorAward />
           </div>
           <div class="flex-1 space-y-2">
-            <div class="h-2/3 bg-red-300">
+            <div class="h-2/3">
               <SlideShow src="../assets/test.png" />
             </div>
-            <div class="h-1/3 bg-red-400"><SocialPart /></div>
+            <div class="h-1/3"><SocialPart /></div>
           </div>
           <!-- New Row Inside 01 -->
         </div>
@@ -43,7 +43,13 @@
           text="Lorem"
           class="flex-1 w-1/5"
         />
-        <TitleTopic title="Bloghjkhkhkhkh" class="flex-1 w-3/5" />
+        <TitleTopic
+          title="Passionate Computer Engineering student at
+        Chulalongkorn University. Co-founder & CTO at The BANDM Co. LTD. Driving
+        innovation with eEyequila AI-generated eye exercises for better
+        vision. Tech enthusiast, entrepreneur, and visionary."
+          class="flex-1 w-3/5 self-center"
+        />
       </div>
 
       <div class="row-span-4 col-span-9">
