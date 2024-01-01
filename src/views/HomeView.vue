@@ -31,7 +31,7 @@
         </div>
       </div>
 
-      <div class="row-span-2 col-span-9 bg-green-200 flex">
+      <div class="row-span-2 col-span-9 flex">
         <ImageFlip
           src="src/assets/CP-logo.png"
           text="Lorem"
@@ -46,8 +46,47 @@
         <TitleTopic title="Bloghjkhkhkhkh" class="flex-1 w-3/5" />
       </div>
 
-      <div class="row-span-4 col-span-9 bg-green-300">04</div>
-      <div class="row-span-3 col-span-9 bg-green-400">05</div>
+      <div class="row-span-4 col-span-9">
+        <div class="grid grid-cols-4 h-full">
+          <div class="col-span-3">
+            <NameCard />
+          </div>
+          <div class="flex">
+            <ImageFlip
+              src="src/assets/CP-logo.png"
+              text="Lorem"
+              link="https://eyequila.com"
+              class="w-full"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row-span-3 col-span-9 bg-green-400">
+        <div class="grid grid-cols-9 h-full">
+          <div class="col-span-1 flex">
+            <div class="transform rotate-90 m-auto">
+              <TitleTopic title="Experience" />
+            </div>
+          </div>
+          <div class="col-span-4 flex">
+            <ImageFlip
+              src="src/assets/CP-logo.png"
+              text="Lorem"
+              link="https://eyequila.com"
+              class="flex-grow"
+            />
+          </div>
+          <div class="col-span-4 flex">
+            <ImageFlip
+              src="src/assets/CP-logo.png"
+              text="Lorem"
+              link="https://eyequila.com"
+              class="flex-grow"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
