@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-950 h-screen">
-    <div class="grid grid-rows-10 grid-cols-12 gap-4 h-full">
+    <div class="grid grid-rows-10 grid-cols-12 gap-4 h-full p-4">
       <!-- 01 with nested grid for additional row -->
 
       <div class="row-span-10 col-span-3 h-dvh">
@@ -24,10 +24,32 @@
         <div class="flex flex-row space-x-2">
           <TitleTopic
             title="Welcome To My Portfolio"
-            class="text-white w-4/6 h"
+            class="text-white w-3/6 h"
           />
-          <TitleTopic title="Blog" class="text-black w-1/6" />
-          <TitleTopic title="Light" class="text-white w-1/6" />
+          <TitleTopic title="Blog" class="text-black w-2/6" />
+          <div
+            class="flex items-center justify-center p-2 my-2 bg-gray-200 bg-opacity-20 rounded-lg cursor-pointer transition-opacity duration-300 ease-in-out w-1/6"
+          >
+            <!-- Text Label -->
+            <div class="text-white font-medium mr-3">Toggle Me!</div>
+
+            <!-- Toggle Container -->
+            <label for="toogleA" class="flex items-center cursor-pointer">
+              <!-- Toggle -->
+              <div class="relative">
+                <!-- Input -->
+                <input id="toogleA" type="checkbox" class="sr-only" />
+                <!-- Line -->
+                <div
+                  class="w-10 h-4 bg-gray-400 rounded-full shadow-inner"
+                ></div>
+                <!-- Dot -->
+                <div
+                  class="dot absolute w-6 h-6 bg-white rounded-full shadow -left-1 -top-1 transition"
+                ></div>
+              </div>
+            </label>
+          </div>
         </div>
       </div>
 
@@ -36,28 +58,30 @@
           src="src/assets/CP-logo.png"
           text="Lorem"
           link="https://eyequila.com"
-          class="flex-1 w-1/5"
+          class="flex-1 w-1/5 h-full"
         />
         <ImageFlip
           src="src/assets/CU-logo.png"
           text="Lorem"
-          class="flex-1 w-1/5"
+          class="flex-1 w-1/5 h-full"
         />
         <TitleTopic
           title="Passionate Computer Engineering student at
         Chulalongkorn University. Co-founder & CTO at The BANDM Co. LTD. Driving
         innovation with eEyequila AI-generated eye exercises for better
         vision. Tech enthusiast, entrepreneur, and visionary."
-          class="flex-1 w-3/5 self-center"
+          class="flex-1 w-3/5 self-center h-full"
         />
       </div>
 
       <div class="row-span-4 col-span-9">
         <div class="grid grid-cols-4 h-full">
-          <div class="col-span-3">
-            <NameCard />
+          <div class="col-span-3 flex">
+            <!-- Ensure the NameCard component takes the full height and width of its container -->
+            <NameCard class="h-full w-full" />
           </div>
-          <div class="flex">
+          <div class="col-span-1 flex">
+            <!-- Adjusted to take the remaining column -->
             <ImageFlip
               src="src/assets/CP-logo.png"
               text="Lorem"
@@ -68,7 +92,7 @@
         </div>
       </div>
 
-      <div class="row-span-3 col-span-9 bg-green-400">
+      <div class="row-span-3 col-span-9">
         <div class="grid grid-cols-9 h-full">
           <div class="col-span-1 flex">
             <div class="transform rotate-90 m-auto">
@@ -110,6 +134,7 @@ import SocialPart from "@/components/SocialPart.vue";
 import NameCard from "@/components/NameCard.vue";
 import ExperiencePart from "@/components/ExperiencePart.vue";
 import SlideShow from "@/components/ActivityPart.vue";
+import ToggleButton from "@/components/ToggleButton.vue";
 
 export default {
   components: {
@@ -123,6 +148,7 @@ export default {
     NameCard,
     ExperiencePart,
     SlideShow,
+    ToggleButton,
   },
 };
 </script>
